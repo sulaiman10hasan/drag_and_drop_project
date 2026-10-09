@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #928cff;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.inputs {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 2px;
+}
+
+.data input {
+    padding: 2px;
+    outline: none;
+    border: none;
+    border: 1px solid #928cff;
+}
+
+.data #btn {
+    background-color: #928cff;
+    border: none;
+    padding: 2px;
+    color: #fff;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.box {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.item {
+    background-color: #928cff;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .list {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box {
+        width: calc(50% - 30px);
+    }
+
+    .inputs {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .inputs {
+        width: 100%;
+        height: auto;
+        min-height: 140px;
+        box-sizing: border-box;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .item {
+        width: auto;
+        overflow-wrap: anywhere;
+        box-sizing: border-box;
+    }
+}
